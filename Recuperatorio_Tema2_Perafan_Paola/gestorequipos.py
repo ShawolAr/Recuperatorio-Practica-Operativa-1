@@ -60,10 +60,10 @@ class GestorEquipo:
   
   def listar_posiciones(self):
         
-        i=0
+        i=1
         print(f"\n--- Tabla de Posiciones ---")
         print(f"Posición    Equipo                       Puntos    GF    GC   DG")
         for equipo in sorted (self.__lista_equipos,reverse=True):
           print(f"{i+1}       {equipo.get_denominacion()}                     {equipo.get_puntos()}       {equipo.get_golesfavor()}       {equipo.get_golescontra()}       {equipo.get_diferenciagoles()} ")
-          
+          i+=1
     
